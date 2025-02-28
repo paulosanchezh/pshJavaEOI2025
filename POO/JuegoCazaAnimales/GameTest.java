@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class GameTest {
     public static void main(String[] args) {
-        Entorno entorno = new Entorno();
         Depredador jugadorCazador;
         Presa jugadorPresa;
 
@@ -24,6 +23,7 @@ public class GameTest {
             default: jugadorCazador = new Hiena();break;
         }
 
-        entorno.jugar(jugadorPresa, jugadorCazador);
+        Entorno entorno = new Entorno(jugadorPresa, jugadorCazador);
+        entorno.jugar();
     }
 }

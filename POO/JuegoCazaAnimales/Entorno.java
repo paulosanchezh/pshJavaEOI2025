@@ -3,8 +3,15 @@ package game;
 import java.util.Scanner;
 
 public class Entorno{
+    Presa jugadorPresa;
+    Depredador jugadorCazador;
 
-    public void jugar(Presa jugadorPresa, Depredador jugadorCazador) {
+    public Entorno(Presa jugadorPresa, Depredador jugadorCazador) {
+        this.jugadorPresa = jugadorPresa;
+        this.jugadorCazador = jugadorCazador;
+    }
+
+    public void jugar() {
 
         jugadorPresa.pasear();
         jugadorCazador.acechar();
