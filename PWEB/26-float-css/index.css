@@ -1,0 +1,13 @@
+.lista li{
+    display: inline-block;
+}
+
+.columna{
+    
+}
+
+@media (max-width: 600px){
+    .lista li{
+        display: block;
+    }
+}

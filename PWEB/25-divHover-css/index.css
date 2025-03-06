@@ -1,0 +1,9 @@
+#contenedor:hover {
+    background-color: brown;
+    transition: ease-in-out 1s;
+}
+
+#contenedor {
+    background-color: yellow;
+    transition: cubic-bezier(0.86, 0, 0.07, 1) 3s;
+}
