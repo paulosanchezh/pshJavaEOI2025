@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-container div {
+    background-color: brown;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+}
+@media  screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    } 
+}
+
+
+

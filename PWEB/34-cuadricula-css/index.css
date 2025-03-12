@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.item {
+    background-color: brown;
+}
+
+.itemF {
+    background-color: rgb(33, 24, 51);
+}
+
+.destacado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:blueviolet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+

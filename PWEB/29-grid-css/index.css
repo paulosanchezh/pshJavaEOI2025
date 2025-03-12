@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.grid-container div {
+    display: flex;
+    background-color:brown;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
