@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Noticias de hoy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Internacional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Deportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Tecnología</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Cultura</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Saber Más
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Deportes</a></li>
+              <li><a class="dropdown-item " href="#">Tecnología</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cultura</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success bg-light text-black" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/500" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Noticia 1</h5>
+          <p>Descripción de la noticia 1</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/500" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Noticia 2</h5>
+          <p>Descripción de la noticia 2</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/500" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Noticia 3</h5>
+          <p>descripción de la noticia 3</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Titulo Noticia</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="img-fluid m-0 p-0" src="https://picsum.photos/600/300" alt="Imagen de noticia en ventana modal">
+        <p class="p-3">Un equipo de investigadores ha desarrollado una innovadora terapia que podría mejorar significativamente el tratamiento del cáncer. El estudio, publicado en una prestigiosa
+           revista médica, demuestra que el nuevo método aumenta la eficacia de los tratamientos actuales y reduce los efectos secundarios en los pacientes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Grid-->
+  <div class="container text-center">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-7 m-3 p-3 bg-secondary bg-opacity-10">
+        <h3 class="text-start p-2 pb-0">Noticias Recientes</h1>
+        <div class="row justify-content-md-center p-3">
+          <div class="card m-2 p-0" style="width: 13rem;">
+            <img src="https://picsum.photos/400/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo Noticia</h5>
+              <p class="card-text">Ejemplo de descripcion corta de la noticia reciente</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Leer Más
+              </button>
+            </div>
+          </div>
+          <div class="card m-2 p-0" style="width: 13rem;">
+            <img src="https://picsum.photos/400/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo Noticia</h5>
+              <p class="card-text">Ejemplo de descripcion corta de la noticia reciente</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Leer Más
+              </button>
+            </div>
+          </div>
+          <div class="card m-2 p-0" style="width: 13rem;">
+            <img src="https://picsum.photos/400/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Titulo Noticia</h5>
+              <p class="card-text">Ejemplo de descripcion corta de la noticia reciente</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Leer Más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col col-lg-3 p-4 m-3 bg-secondary bg-opacity-10">
+        <h3>Categorías</h3>
+        <ul class="list-group mt-4">
+          <button type="button" class="list-group-item list-group-item-action">Futbol</button>
+          <button type="button" class="list-group-item list-group-item-action">Baloncesto</button>
+          <button type="button" class="list-group-item list-group-item-action">Volley</button>
+          <button type="button" class="list-group-item list-group-item-action">Balonmano</button>
+          <button type="button" class="list-group-item list-group-item-action">Ping-Pong</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Acordeon -->
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-9 m-3 p-4 bg-secondary bg-opacity-10">
+      <h3 class="p-2">Opinión y Analisis</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Noticia 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Descripción de la noticia 1</strong>
+              <p>Texto de la noticia 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Noticia 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Descripción de la noticia 2</strong>
+              <p>Texto de la noticia 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Noticia 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Descripción de la noticia 3</strong>
+              <p>Texto de la noticia 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-lg-start text-light">
+    <div class="container p-4">
+      <div class="row text-center">
+          <p class="text-uppercase">@2025 Noticias de Hoy todos los derechos reservados</p>
+          <div class="icon-bar"> 
+            <a href="https://www.facebook.com/adobetalk" target="_blank"><i class="fa fa-facebook"></i></a> 
+            <a href="#"><i class="fa fa-twitter text-white p-1"></i></a> 
+            <a href="#"><i class="fa fa fa-instagram text-white p-1"></i></a> 
+            <a href="#"><i class="fa fa-linkedin text-white p-1"></i></a> 
+            <a href="#"><i class="fa fa-youtube text-white p-1"></i></a> 
+          </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#card {
+    width: 18rem;
+    padding-bottom: 0;
+}
+
+#card img{
+    height: 12em;
+    overflow:hidden;
+    margin-bottom: 0;
+}
+
+#prueba{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+#prueba h5{
+    margin-right: 1em;
+    margin-top: 0;
+}
+
+.lineaVertical {
+    height: 1.5em;
+    width: 0.08em;
+    background-color: black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
